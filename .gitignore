@@ -1,0 +1,5 @@
+KiCAD/control/plate-backups/*
+KiCAD/100x100-plate/100x100-plate-backups/*
+*.elf
+*.hex
+*.o
