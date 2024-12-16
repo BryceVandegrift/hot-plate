@@ -8,6 +8,7 @@
 		(title "100mm x 100mm PCB Hot Plate")
 		(date "2024-09-19")
 		(rev "1.0")
+		(comment 1 "Licensed under the CERN-OHL-W-2.0")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x08_Socket"

@@ -1,3 +1,5 @@
+/* See LICENSE for license details. */
+
 #include <avr/io.h>
 #include <avr/pgmspace.h>
 

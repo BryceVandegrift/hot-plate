@@ -1,3 +1,6 @@
+# PCB Hot Plate code for ATTINY84a
+# See LICENSE file for copyright and license details.
+
 CC = avr-gcc
 OBJCPY = avr-objcopy
 CFLAGS = -std=c89 -pedantic -Wall -Wextra -Os -DF_CPU=1000000UL -mmcu=attiny84a -fno-split-wide-types

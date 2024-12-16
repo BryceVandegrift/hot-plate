@@ -1,3 +1,5 @@
+/* See LICENSE for license details. */
+
 $fn = 30;
 
 cylinder(h = 12, d = 6);

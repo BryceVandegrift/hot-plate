@@ -92,3 +92,8 @@ A list of all Digikey parts can be found [here](https://www.digikey.com/en/mylis
 | Integrated Circuit | U1        | LMT87LPGM temperature sensor            | 1        | Digikey 296-LMT87LPGMCT-ND         |
 | Capacitor          | C1, C2    | 0.1uF, MLCC, 5mm lead spacing           | 2        | Digikey BC2665CT-ND                |
 | Pin Socket         | J1        | 8 pin header, 2.54mm pitch, right angle | 1        | Digikey S5483-ND                   |
+
+## License
+
+Source code is licensed under the GPLV3 or later.
+Everything else is licensed under the CERN-OHL-W-2.0.
