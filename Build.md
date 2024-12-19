@@ -8,7 +8,7 @@
   recommended.
 - Small side cutters for cutting components' leads.
 - Desk lamp and or magnifying glass
-- An ISCP programmer for programming the microcontroller
+- An ICSP programmer for programming the microcontroller
 - Solder suitable for soldering electronics.
 - Solder wick for removing excess of solder.
 - 90-99% Isopropyl Alcohol for removing the excess of flux after soldering.
@@ -31,8 +31,8 @@ safe).
 
 #### Optional Parts
 
-The ISCP header (J2) on the control board is optional if you get your ATTINY84A
-pre-programmed or use another method to program it besides ISCP.
+The ICSP header (J2) on the control board is optional if you get your ATTINY84A
+pre-programmed or use another method to program it besides ICSP.
 
 #### 3D Printed Parts
 
@@ -60,10 +60,25 @@ below.
 4. Carefully inspect all the solder joints. Re-solder if needed. Optionally use
    a multimeter to check the board for short-circuits.
 5. Clean the board using cotton swaps, wipes, and the toothbrush soaked in alcohol.
-6. Insert the ATTINY84A into the socket and flash it using an ISCP programmer.
+6. Insert the ATTINY84A into the socket and flash it using an ICSP programmer.
 7. Attach the 3D printed feet to the boards and connect the boards together.
 8. Connect the power supply and if everything works you should see text on the
    screen.
+
+### Flashing the Firmware
+
+In order to flash the firmware using ICSP you'll need an ICSP programmer and the
+`avrdude` software. Once you have the ICSP programmer hooked up to the board
+(if you need help reference the schematic and board design), you'll need to run
+this command to flash the firmware:
+
+``` sh
+avrdude -p t84a -P <port> -c <Your programmer> -b <baud rate> -U flash:w:main.hex
+```
+
+Where `<port>` is the port that your programmer is plugged into,
+`<Your programmer>` is the type of ICSP programmer that you are using, and
+`<baud rate>` is your desired baud rate.
 
 ### Building the Firmware
 
