@@ -26,6 +26,15 @@ Best used with low melt solder paste. This includes:
 
 ## Hardware
 
+### Schematics
+
+[Control Board Schematic](KiCAD/schematics/plate.pdf)
+[Hot Plate Schematic](KiCAD/schematics/100x100-plate.pdf)
+
+### Build Instructions
+
+Please refer to [Building Instructions](Build.md) page for detailed instructions.
+
 ### Connectors and Switches
 
 #### J1 - DC Power Input

@@ -39,13 +39,13 @@ pre-programmed or use another method to program it besides ISCP.
 This design also uses 3D printed legs to hold everything up. If you don't have a
 3D printer then you can use a 3D printing service like JLC3DP. You can use
 almost any material for the legs, but I would recommend just normal PLA plastic.
-You can find the STL file for the legs [here]().
+You can find the STL file for the legs [here](3d/peg.stl).
 Also don't worry, the legs will **not** melt or majorly deform despite the heat.
 
 #### Firmware
 
 In order to flash the firmware to the ATTINY84A you can either use a pre-built
-HEX file [here]() or build the firmware from scratch using the instructions
+HEX file [here](src/main.hex) or build the firmware from scratch using the instructions
 below.
 
 ## Building
