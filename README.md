@@ -19,6 +19,11 @@ order to make it easy to build by hobbyists.
 - 18-20 volt 2x5.5mm DC input
 - 3 button input
 
+Best used with low melt solder paste. This includes:
+- Sn48/In52
+- Sn42/Bi58
+- Sn42/Bi57/Ag1.0
+
 ## Hardware
 
 ### Connectors and Switches
@@ -96,4 +101,5 @@ A list of all Digikey parts can be found [here](https://www.digikey.com/en/mylis
 ## License
 
 Source code is licensed under the GPLV3 or later.
+
 Everything else is licensed under the CERN-OHL-W-2.0.
