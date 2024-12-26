@@ -12321,7 +12321,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "128x32 SSD1306 Display"
+	(gr_text "128x64 SSD1306 Display"
 		(at 182.5 62 0)
 		(layer "F.SilkS")
 		(uuid "c5fe56df-7813-4e67-82e4-4a8f96b4e9bc")

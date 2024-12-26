@@ -14,7 +14,7 @@ order to make it easy to build by hobbyists.
 
 - 180°C max temperature
 - Microcontroller: Atmel ATTINY84A
-- Display: 128x32 pixel SSD1306 or compatible display
+- Display: 128x64 pixel SSD1306 or compatible display
 - Modular/interchangeable hot plates
 - 18-20 volt 2x5.5mm DC input
 - 3 button input
@@ -84,7 +84,7 @@ A list of all Digikey parts can be found [here](https://www.digikey.com/en/mylis
 | ----               | --------- | -----------                             | -------- | ------                              |
 | Integrated Circuit | U1        | L7805CV voltage regulator               | 1        | Digikey 497-1443-5-ND               |
 | Integrated Circuit | U2        | ATTINY84A-PU microcontroller            | 1        | Digikey ATTINY84A-PU-ND             |
-| Display            | U3        | SSD1306 0.96" display                   | 1        | Ebay, AliExpress, and other sources |
+| Display            | U3        | SSD1306 128x64 0.96" display            | 1        | Ebay, AliExpress, and other sources |
 | IC Socket          | U2        | DIP-14 300 mil socket                   | 1        | Digikey ED3014-ND                   |
 | Diode              | D1, D2    | SD103A                                  | 2        | Digikey SD103AVSCT-ND               |
 | Diode              | D3        | 1N5231                                  | 1        | Digikey 1N5231B-ND                  |
