@@ -36,11 +36,11 @@ pre-programmed or use another method to program it besides ICSP.
 
 #### 3D Printed Parts
 
-This design also uses 3D printed legs to hold everything up. If you don't have a
+This design also uses 3D printed legs and rings to hold everything up. If you don't have a
 3D printer then you can use a 3D printing service like JLC3DP. You can use
 almost any material for the legs, but I would recommend just normal PLA plastic.
-You can find the STL file for the legs [here](3d/peg.stl).
-Also don't worry, the legs will **not** melt or majorly deform despite the heat.
+You can find the STL file for the legs [here](3d/peg.stl) and the rings [here](3d/ring.stl).
+Also don't worry, the legs and rings will **not** melt or majorly deform despite the heat.
 
 #### Firmware
 
@@ -61,7 +61,7 @@ below.
    a multimeter to check the board for short-circuits.
 5. Clean the board using cotton swaps, wipes, and the toothbrush soaked in alcohol.
 6. Insert the ATTINY84A into the socket and flash it using an ICSP programmer.
-7. Attach the 3D printed feet to the boards and connect the boards together.
+7. Attach the 3D printed feet to the boards, secure with rings, and connect the boards together.
 8. Connect the power supply and if everything works you should see text on the
    screen.
 
