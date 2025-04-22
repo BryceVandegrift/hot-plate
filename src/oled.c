@@ -22,6 +22,7 @@ static void i2c_tx(uint8_t data);
 static void i2c_start(void);
 static void i2c_stop(void);
 
+/* init sequence for oled display */
 static const uint8_t init_bytes[] PROGMEM = {
 	0xae,
 	0xd5,

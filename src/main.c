@@ -6,6 +6,8 @@
 
 #include "oled.h"
 
+#define DEBOUNCE while((PINB & (1 << PINB0)) || (PINB & (1 << PINB1)) || (PINB & (1 << PINB2))) {}
+
 #define MOSFET_ON PORTA |= (1 << PORTA7)
 #define MOSFET_OFF PORTA &= ~(1 << PORTA7)
 
@@ -139,6 +141,8 @@ cool()
 
 	oled_clear();
 
+	DEBOUNCE
+
 	oled_setpos(0, 0);
 	oled_print("Cooling...");
 
@@ -155,7 +159,7 @@ cool()
 			break;
 		}
 
-		_delay_ms(100);
+		_delay_ms(10);
 	}
 
 	return;
@@ -172,7 +176,7 @@ heat()
 	/* write temp to eeprom */
 	eeprom_write_byte(EEPROM_ADDR, temp);
 
-	_delay_ms(1000);
+	DEBOUNCE
 
 	oled_setpos(0, 0);
 	oled_print("Heating...");
@@ -200,17 +204,13 @@ heat()
 			break;
 		}
 
-		_delay_ms(100);
+		_delay_ms(10);
 	}
 
 	MOSFET_OFF;
 
-	_delay_ms(1000);
-
 	/* cool down plate */
 	cool();
-
-	_delay_ms(1000);
 
 	return;
 
