@@ -1,4 +1,4 @@
-# THT PCB Hot Plate
+# PCB Hot Plate
 
 A modular PCB soldering hot plate using only through hole components
 
@@ -6,7 +6,7 @@ A modular PCB soldering hot plate using only through hole components
 
 A modular PCB hot plate designed for hot plate soldering. It is designed for SMD
 soldering and can go up to 180°C. Made using only through hole components in
-order to make it easy to build by hobbyists.
+order to make it easy to be built by hobbyists.
 
 ![PCB Hot Plate](hot-plate.webp)
 
@@ -16,13 +16,43 @@ order to make it easy to build by hobbyists.
 - Microcontroller: Atmel ATTINY84A
 - Display: 128x64 pixel SSD1306 or compatible display
 - Modular/interchangeable hot plates
+- Support for simple heat curves
 - 18-20 volt 2x5.5mm DC input
 - 3 button input
 
-Best used with low melt solder paste. This includes:
+Best used with low melt solder paste. This includes (but is not limited to):
 - Sn48/In52
 - Sn42/Bi58
 - Sn42/Bi57/Ag1.0
+
+## Usage
+
+When you power up the hot plate you will be presented with 2 modes:
+
+- Normal heating
+- Heat curve
+
+### Normal Heating
+
+Normal heating mode is very simple to use. Just set a temperature and the hot
+plate will heat up and stay at the set temperature. You can press `Enter` in
+order to enter into cooling mode afterwards.
+
+### Heat Curve
+
+Heat curve mode lets you set and use your own custom heat curve. There are 5
+parts to heat curve mode:
+
+- Preheat: Temperature to preheat
+- Soak: Amount of time (in seconds) to "soak" in preheat temperature
+- Reflow heating: Temperature to reflow
+- Reflow: Amount of time (in seconds) to reflow
+- Cooldown
+
+Pressing `Enter` will skip to the next stage of the heat curve.
+Heat curve mode roughly follows this graph:
+
+![Graph of heat curve](curve.webp)
 
 ## Hardware
 
@@ -34,7 +64,7 @@ Best used with low melt solder paste. This includes:
 
 ### Build Instructions
 
-Please refer to [Building Instructions](Build.md) page for detailed instructions.
+Please refer to the [Building Instructions](Build.md) page for detailed instructions.
 
 ### Connectors and Switches
 

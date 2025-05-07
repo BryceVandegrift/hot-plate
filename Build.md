@@ -10,8 +10,8 @@
 - Desk lamp and or magnifying glass
 - An ICSP programmer for programming the microcontroller
 - Solder suitable for soldering electronics.
-- Solder wick for removing excess of solder.
-- 90-99% Isopropyl Alcohol for removing the excess of flux after soldering.
+- Solder wick for removing excess solder.
+- 90-99% Isopropyl Alcohol for removing the excess flux after soldering.
 - Lint free wipes, used toothbrush, or cotton swabs for cleaning the PCB
   before and after soldering.
 - A multimeter can be beneficial for troubleshooting.
@@ -20,7 +20,7 @@
 
 #### Getting Parts
 
-A list of parts can be found in the [bill of materials](README.md#bill-of-materials)
+A list of parts can be found in the [bill of materials](README.md#bill-of-materials) section
 of the README.md file. You can find the provided parts from Digikey
 (recommended), Mouser, or from any other electronics parts suppliers.
 
@@ -32,14 +32,15 @@ safe).
 #### Optional Parts
 
 The ICSP header (J2) on the control board is optional if you get your ATTINY84A
-pre-programmed or use another method to program it besides ICSP.
+pre-programmed or you use another method to program it besides ICSP.
 
 #### 3D Printed Parts
 
 This design also uses 3D printed legs and rings to hold everything up. If you don't have a
 3D printer then you can use a 3D printing service like JLC3DP. You can use
 almost any material for the legs, but I would recommend just normal PLA plastic.
-You can find the STL file for the legs [here](3d/peg.stl) and the rings [here](3d/ring.stl).
+You can find the STL files for the legs [here](3d/peg.stl) and the rings [here](3d/ring.stl).
+I recommend printing with 0.1mm layer height at 100% infill.
 Also don't worry, the legs and rings will **not** melt or majorly deform despite the heat.
 
 #### Firmware
@@ -85,8 +86,8 @@ Where `<port>` is the port that your programmer is plugged into,
 In order to build firmware for the hot plate you'll need to make sure you have
 the AVR-GCC toolchain. This is easy to install for Linux using your package
 manager and MacOS using homebrew. Windows users can use
-[WinAVR](https://winavr.sourceforge.net/) to get the AVR toolchain on thier
-system. Besides GCC-AVR, you need Make as well.
+[WinAVR](https://winavr.sourceforge.net/) to get the AVR toolchain on their
+system. Besides GCC-AVR, you will need Make as well.
 
 In order to build, go to the `src` directory and run:
 
